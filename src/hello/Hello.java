@@ -9,6 +9,7 @@ import java.util.Date;
 
 import hello.livre.Auteur;
 import hello.livre.Livre;
+import hello.livre.exceptions.BirthDateException;
 
 /**
  * @author Dell
@@ -19,8 +20,9 @@ public class Hello {
 	/**
 	 * @param args
 	 * @throws ParseException 
+	 * @throws BirthDateException 
 	 */
-	public static void main(String[] args) throws ParseException {
+	public static void main(String[] args) throws ParseException, BirthDateException {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Hello Java");
@@ -52,7 +54,8 @@ public class Hello {
 		
 		// CLoner un loueur pour en faire un emprunteur
 		Utilisateur emprnuteurAlien=alien.clone();
-		System.out.println("Emprunteur"+emprunteurAlien.getNom()+":")
+		Auteur emprunteurAlien = null;
+		System.out.println("Emprunteur"+emprunteurAlien.getNom()+":");
 		
 		// Création d'un bouquin
 		

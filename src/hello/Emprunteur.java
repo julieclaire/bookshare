@@ -45,7 +45,13 @@ public class Emprunteur extends Utilisateur {
 	
 //Calcul coût location
 	public double coutlocation (){
-		this.coutlocation= nbLivres*durée*Cotisation.coutlocation
+		return coutlocation;
+		//this.coutlocation= nbLivres*durée*Cotisation.coutlocation;
+	}
+	@Override
+	public Utilisateur clone() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }
